@@ -1,5 +1,4 @@
 import streamlit as st
-import matplotlib.pyplot as plt
 
 
 def page_hypothesis_body():
@@ -28,7 +27,7 @@ def page_hypothesis_body():
 
     st.write(
         f"To study detected visual features of infected and healthy leaves "
-        f"visit the [Cherry Leaf Visualiser](#cherry-leaf-visualiser) tab.")
+        f"visit the **Cherry Leaf Visualiser** tab.")
 
 
     st.write("### Hypotesis 2 and validation")
@@ -50,8 +49,8 @@ def page_hypothesis_body():
     )
     
     st.write(
-        f"To study the model perforamce metrics visit the "
-        f"[ML Prediction Metrics](#ml-prediction-metrics) tab.")
+        f"To study the model perforamce metrics visit the **ML Prediction "
+        f"Metrics** tab.")
 
     st.write("### Hypotesis 3 and validation")
 
@@ -72,8 +71,8 @@ def page_hypothesis_body():
     )
 
     st.write(
-        f"To study the model perforamce metrics visit the "
-        f"[Powdery Mildew Detection](#powdery-mildew-detection) tab.")
+        f"To study the model performance metrics visit the "
+        f"**Powdery Mildew Detection** tab.")
 
     st.write("### Hypotesis 4 and validation")
 
@@ -108,7 +107,6 @@ def page_hypothesis_body():
         f"to approximately 2 hours, a savings of 48 hours or 96 % reduction in "
         f"time."
     )
-
 
     st.write("### Hypotesis 5 and validation")
 

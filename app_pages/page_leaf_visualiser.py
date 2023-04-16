@@ -104,7 +104,8 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
     # Validate inputs
     if not os.path.isdir(dir_path):
         raise ValueError("Invalid directory path.")
-    if not isinstance(nrows, int) or not isinstance(ncols, int) or nrows <= 0 or ncols <= 0:
+    if not isinstance(nrows, int) or not isinstance(ncols, int) \
+            or nrows <= 0 or ncols <= 0:
         raise ValueError(
             "Number of rows and columns must be positive integers.")
 
@@ -119,7 +120,8 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
     else:
         print(f"To create a montage, reduce the number of rows or columns. "
               f"Your subset contains a total of {len(images_list)} images, "
-              f"but you have requested a montage that includes {nrows * ncols}.")
+              f"but you have requested a montage that includes {nrows * ncols}."
+              )
         return
 
     plot_idx = list(itertools.product(range(nrows), range(ncols)))
