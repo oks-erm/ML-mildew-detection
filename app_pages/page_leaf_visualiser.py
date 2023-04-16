@@ -11,15 +11,17 @@ import random
 
 
 def page_leaf_visualiser_body():
-    st.write("### Cherry Leaf Visualizer")
+    st.write("### Cherry Leaf Visualiser")
+
     st.info(
-        f"* Here you can study a visual difference between healthy and affected "
-        f"by powdery mildew cherry leaves, specifically the visual markers for "
-        f"defects that define powdery mildew infection.")
-    
+        f"* Here you can study a visual difference between healthy and affected"
+        f" by powdery mildew cherry leaves, specifically the visual markers for"
+        f" defects that define powdery mildew infection."
+    )
+
     st.warning(
         f"We expect cherry leaves infected with powdery mildew have white "
-        f"or grayish powdery coating on the surface, typical symptom is a"
+        f"or grayish powdery coating on the surface, typical symptom is a "
         f"white or grayish marks on the leaves. These marks can sometimes "
         f"appear as irregular blotches or spots on the surface of the "
         f"leaf.\n\n"
@@ -32,7 +34,8 @@ def page_leaf_visualiser_body():
         f"entire dataset, which considers the visual properties of the "
         f"powdery mildew on the leaf. This process enables the machine "
         f"learning model to learn the relevant features accurately and "
-        f"efficiently from the image data.")
+        f"efficiently from the image data."
+    )
 
     version = 'v1'
     if st.checkbox("Difference between average and variability image"):
@@ -46,7 +49,8 @@ def page_leaf_visualiser_body():
             f"We observed that the average and variability images did not "
             f"display any clear patterns that we could easily distinguish from "
             f"each other. However, leaves that were affected by powdery mildew "
-            f"exhibited a greater number of white stripes in the center region.")
+            f"exhibited a greater number of white stripes in the center region."
+            )
 
         st.image(avg_bad_quality,
                  caption='Infected with powdery mildew cherry leaf- Average and Variability')
@@ -60,13 +64,28 @@ def page_leaf_visualiser_body():
         diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
         st.warning(
-            f"We observed that this study did not reveal any discernible "
-            f"patterns.")
+            f"Differences between average healthy and average powdery mildew "
+            f"cherry leaves suggests that healthy cherry leaves form clusters "
+            f"of whiteness and brightness, indicating a lighter and brighter "
+            f"green color. In contrast, infected leaves form clusters of "
+            f"darkness and lower saturation, indicating a less green and less "
+            f"saturated appearance.")
         st.image(diff_between_avgs,
                  caption='Difference between average images')
         st.write("---")
 
     if st.checkbox("Image Montage"):
+        st.info(
+            f"Using an image montage tool can aid in identifying the specific "
+            f"features and variations that the model struggles with, enabling "
+            f"the staff member to reinforce the model's accuracy by providing "
+            f"targeted feedback. Additionally, the image montage can be used "
+            f"to compare features of the correctly predicted cases and the "
+            f"incorrectly predicted cases, providing insight into what factors "
+            f"may be contributing to the model's errors. This approach allows "
+            f"for a more thorough analysis of the model's performance and "
+            f"provides valuable information for future model improvements."
+        )
         st.write("* To refresh the montage, click on 'Create Montage' button")
         my_data_dir = 'inputs/cherry_leaves_dataset/cherry-leaves'
         labels = os.listdir(my_data_dir + '/validation')
