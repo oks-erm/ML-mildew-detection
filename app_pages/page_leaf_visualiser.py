@@ -64,6 +64,7 @@ def page_leaf_visualiser_body():
             f"patterns.")
         st.image(diff_between_avgs,
                  caption='Difference between average images')
+        st.write("---")
 
     if st.checkbox("Image Montage"):
         st.write("* To refresh the montage, click on 'Create Montage' button")
