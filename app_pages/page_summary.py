@@ -1,5 +1,9 @@
 import streamlit as st
 import matplotlib.pyplot as plt
+from PIL import Image
+
+
+image = Image.open("readme_assets/summary.jpg")
 
 
 def page_summary_body():
@@ -18,6 +22,9 @@ def page_summary_body():
         f"The dataset is a collection of cherry leaf images provided by "
         f"**Farmy & Foods**, taken from their crops."
     )
+
+    st.image(image, caption="Powdery Mildew Detection predicting on cherry leaves images",
+             use_column_width=True)
 
     st.write(
         f"* For additional information on the dataset and data preparation see "
@@ -51,17 +58,17 @@ def page_summary_body():
         f"2. Preprocess the dataset by cleaning, resizing, and normalizing the "
         f"images to prepare them for ML algorithms.\n"
         f"3. Image Augmentation. The training dataset images are augmented to "
-        f"increase the model's performance."
-        f"3. Develop an ML model using supervised learning techniques, such as "
+        f"increase the model's performance.\n"
+        f"4. Develop an ML model using supervised learning techniques, such as "
         f"convolutional neural networks, to classify cherry leaves as healthy "
         f"or infected with powdery mildew.\n"
-        f"4. Train the model using the preprocessed dataset and validate its "
+        f"5. Train the model using the preprocessed dataset and validate its "
         f"performance on a separate test dataset.\n"
-        f"5. Deploy the trained model to a dashboard that displays its "
+        f"6. Deploy the trained model to a dashboard that displays its "
         f"predictions and meets the client's requirements.\n"
-        f"6. Conduct a study to visually differentiate healthy and powdery "
+        f"7. Conduct a study to visually differentiate healthy and powdery "
         f"mildew infected cherry leaves and predict the health of cherry trees "
         f"using the deployed model.\n"
-        f"7. Provide possible outcomes and explanations to the client to "
+        f"8. Provide possible outcomes and explanations to the client to "
         f"facilitate decision-making.\n"
     )
