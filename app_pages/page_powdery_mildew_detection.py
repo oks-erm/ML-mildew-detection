@@ -42,7 +42,7 @@ def page_powdery_mildew_detection_body():
                      caption=f"Image Size: {img_array.shape[1]}px width "
                              f"x {img_array.shape[0]}px height")
 
-            version = 'v1'
+            version = 'v2'
             resized_img = resize_input_image(img=img_pil, version=version)
             pred_proba, pred_class = load_model_and_predict(resized_img,
                                                             version=version)

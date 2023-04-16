@@ -5,7 +5,7 @@ from matplotlib.image import imread
 from src.ml.evaluate_clf import load_test_evaluation
 
 
-def page_ml_prediction_metrics(version='v1'):
+def page_ml_prediction_metrics(version='v2'):
 
     st.write("### Train, Validation and Test Set: Labels Frequencies")
 
