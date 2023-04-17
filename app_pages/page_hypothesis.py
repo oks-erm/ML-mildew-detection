@@ -29,7 +29,6 @@ def page_hypothesis_body():
         f"To study detected visual features of infected and healthy leaves "
         f"visit the **Cherry Leaf Visualiser** tab.")
 
-
     st.write("### Hypotesis 2 and validation")
 
     st.success(
