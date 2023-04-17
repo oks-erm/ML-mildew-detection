@@ -237,25 +237,28 @@ Using **tanh** activation and 3 hidden layers for binary classification is a com
 
 ### **v1**
 
-![](outputs/v1/model_training_acc.png)
-![](outputs/v1/model_training_losses.png)
+<img src="outputs/v1/model_training_acc.png" width="400" height="300">
+<img src="outputs/v1/model_training_losses.png" width="400" height="300">
 
 The model met the requirements of the project but had a relatively low recall score. A relatively high rate of infected leaves misidentified as healthy made me attempt to minimise this metric.
 
 ![](readme_assets/clf1.png)
-![](outputs/v1/confusion_matrix.png)
+
+<img src="outputs/v1/confusion_matrix.png" width="500" height="400">
 
 
 ### **v2**
 The second model accomplished that
 
-![](outputs/v2/confusion_matrix.png)
-![](outputs/v2/model_training_acc.png)
-![](outputs/v2/model_training_losses.png)
+<img src="outputs/v2/confusion_matrix.png" width="500" height="400">
+
+<img src="outputs/v2/model_training_acc.png" width="400" height="300">
+<img src="outputs/v2/model_training_losses.png" width="400" height="300">
 
 the performance metrics on the training set were superior to the previous iteration, including lower losses.
 
-![](readme_assets/clf.png)
+<img src="readme_assets/clf.png" width="450" height="180">
+
 ___
 ## Manual Testing
 
