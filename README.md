@@ -249,17 +249,11 @@ The model met the requirements of the project but had a relatively low recall sc
 ### **v2**
 The second model accomplished that
 
-
 ![](outputs/v2/confusion_matrix.png)
-
-However, the training history plots made me worry about overfitting as the training curve was not as smooth, 
-
-
 ![](outputs/v2/model_training_acc.png)
 ![](outputs/v2/model_training_losses.png)
 
-whilst the performance metrics on the training set were superior to the previous iteration, including lower losses.
-
+the performance metrics on the training set were superior to the previous iteration, including lower losses.
 
 ![](readme_assets/clf.png)
 ___
