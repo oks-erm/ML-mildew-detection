@@ -1,5 +1,9 @@
 # Powdery Mildew Detector (ML project)
 
+![mockup](readme_assets/mockup.png)
+
+Live version is available [here](https://pm-detector.herokuapp.com/).
+
 Powdery mildew detection on cherry leaves is a data science and machine learning project with the aim of distinguishing between healthy and diseased cherry leaves. The project includes a binary classification machine learning model that can be used to predict the health status of cherry leaves by uploading images to a Streamlit dashboard. Additionally, the project includes pages with findings from traditional data analysis, a detailed analysis of the hypotheses, and an evaluation of the model's performance.
 
 To ensure a functional pipeline, the project includes three Jupyter notebooks covering data importation and cleaning, data visualization, and the development and evaluation of a TensorFlow deep learning model. These notebooks provide a clear and organized way to manage the project's data and development process.
@@ -252,7 +256,7 @@ ___
 ## Deployment
 ### Heroku
 
-* The App live link is: 
+* The App live link is: https://pm-detector.herokuapp.com/
 * The project was deployed on Heroku using the following steps.
 
 1. Log in to Heroku and create an App
