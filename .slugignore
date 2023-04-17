@@ -2,8 +2,7 @@ inputs/cherry_leaves_dataset/cherry-leaves/test/healthy/*
 inputs/cherry_leaves_dataset/cherry-leaves/test/powdery_mildew/*
 inputs/cherry_leaves_dataset/cherry-leaves/train/healthy/*
 inputs/cherry_leaves_dataset/cherry-leaves/train/powdery_mildew/*
-readme_assets/*
-README.md
+
 .gitpod.dockerfile
 .gitpod.yml
 app_pages/__pycache__/*
